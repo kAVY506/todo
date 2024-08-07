@@ -6,7 +6,7 @@ const app = express();
 app.use(express.json());
 app. use (cors(corsOptions));
 const port = 5000;
-const mongoUrl = "mongodb+srv://kavyareddyamanaganti:<password>@cluster0.gi30zmx.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
+const mongoUrl = "mongodb+srv://kavyareddyamanaganti:kavyareddyamanaganti@cluster0.gi30zmx.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
 mongoose.connect (mongoUrl, {});
 mongoose.connection.on("connected",() => {
     console.log ("connected to mongoDB sucessfully");
